@@ -1,4 +1,4 @@
-package ru.practicum.ewm_stats.dto;
+package ru.practicum.dto;
 
 import lombok.*;
 
@@ -8,7 +8,6 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ViewStatsDto {
-
     private String app;
     private String uri;
     private Long hits;

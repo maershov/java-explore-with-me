@@ -1,12 +1,12 @@
-package ru.practicum.ewm_stats.controller;
+package ru.practicum.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import ru.practicum.ewm_stats.dto.EndpointHitDto;
-import ru.practicum.ewm_stats.dto.GetStatsDto;
-import ru.practicum.ewm_stats.dto.ViewStatsDto;
-import ru.practicum.ewm_stats.service.EndpointHitService;
+import ru.practicum.dto.EndpointHitDto;
+import ru.practicum.dto.GetStatsDto;
+import ru.practicum.dto.ViewStatsDto;
+import ru.practicum.service.EndpointHitService;
 
 import javax.validation.Valid;
 import java.util.List;

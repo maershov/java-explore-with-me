@@ -1,8 +1,8 @@
-package ru.practicum.ewm_stats.mapper;
+package ru.practicum.mapper;
 
 import lombok.experimental.UtilityClass;
-import ru.practicum.ewm_stats.dto.EndpointHitDto;
-import ru.practicum.ewm_stats.model.EndpointHit;
+import ru.practicum.dto.EndpointHitDto;
+import ru.practicum.model.EndpointHit;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -14,7 +14,7 @@ public class EndpointHitMapper {
 
     public static EndpointHit toEndpointHit(EndpointHitDto endpointHitDto) {
         return EndpointHit.builder()
-                .id(endpointHitDto.getId())
+                .id(null)
                 .app(endpointHitDto.getApp())
                 .ip(endpointHitDto.getIp())
                 .uri(endpointHitDto.getUri())
@@ -25,7 +25,6 @@ public class EndpointHitMapper {
 
     public static EndpointHitDto toEndpointHitDto(EndpointHit endpointHit) {
         return EndpointHitDto.builder()
-                .id(endpointHit.getId())
                 .app(endpointHit.getApp())
                 .ip(endpointHit.getIp())
                 .uri(endpointHit.getUri())

@@ -1,4 +1,4 @@
-package ru.practicum.ewm_stats.dto;
+package ru.practicum.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
@@ -12,8 +12,6 @@ import javax.validation.constraints.NotBlank;
 @AllArgsConstructor
 @NoArgsConstructor
 public class EndpointHitDto {
-
-    private Long id;
     @NotBlank
     private String app;
     @NotBlank

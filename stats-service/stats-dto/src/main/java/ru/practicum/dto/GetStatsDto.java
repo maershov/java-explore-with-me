@@ -1,4 +1,4 @@
-package ru.practicum.ewm_stats.dto;
+package ru.practicum.dto;
 
 import lombok.*;
 
@@ -10,7 +10,6 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class GetStatsDto {
-
     @NotNull
     private String start;
     @NotNull

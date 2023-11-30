@@ -1,8 +1,8 @@
-package ru.practicum.ewm_stats.service;
+package ru.practicum.service;
 
-import ru.practicum.ewm_stats.dto.EndpointHitDto;
-import ru.practicum.ewm_stats.dto.GetStatsDto;
-import ru.practicum.ewm_stats.dto.ViewStatsDto;
+import ru.practicum.dto.EndpointHitDto;
+import ru.practicum.dto.GetStatsDto;
+import ru.practicum.dto.ViewStatsDto;
 
 import java.util.List;
 
