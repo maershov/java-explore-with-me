@@ -32,7 +32,7 @@ public class UserController {
 
     @GetMapping
     public List<UserDto> getUsers(@RequestParam(required = false) List<Long> ids, @RequestParam(value = "from", defaultValue = "0", required = false) Integer from,
-                                  @RequestParam(value = "size", defaultValue = "10", required = false) Integer size) {
+                                  @RequestParam(value = "size", defaultValue = "10") Integer size) {
 
         if (size <= 0 || from < 0) {
             throw new IllegalReceiveException("Неверно указан параметр");

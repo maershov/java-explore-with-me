@@ -33,8 +33,8 @@ public class EventPrivateController {
 
     @GetMapping
     public List<EventFullDto> getEventByUserId(@PathVariable Long userId,
-                                               @RequestParam(value = "from", defaultValue = "0", required = false) Integer from,
-                                               @RequestParam(value = "size", defaultValue = "10", required = false) Integer size) {
+                                               @RequestParam(value = "from", defaultValue = "0") Integer from,
+                                               @RequestParam(value = "size", defaultValue = "10") Integer size) {
         if (size <= 0 || from < 0) {
             throw new IllegalReceiveException("Неверно указан параметр");
         }

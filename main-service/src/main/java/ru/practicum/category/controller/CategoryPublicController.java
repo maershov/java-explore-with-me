@@ -15,8 +15,8 @@ public class CategoryPublicController {
     private final CategoryService categoryService;
 
     @GetMapping
-    public List<Category> findAllCategory(@RequestParam(value = "from", defaultValue = "0", required = false) Integer from,
-                                          @RequestParam(value = "size", defaultValue = "10", required = false) Integer size) {
+    public List<Category> findAllCategory(@RequestParam(value = "from", defaultValue = "0") Integer from,
+                                          @RequestParam(value = "size", defaultValue = "10") Integer size) {
         return categoryService.findAllCategory(from, size);
     }
 
